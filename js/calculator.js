@@ -22,4 +22,4 @@ function calculator(options){
                alert("not worked");
                break;
     }
-}
+} 
