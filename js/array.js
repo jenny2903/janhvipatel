@@ -1,10 +1,5 @@
-function createWords(j) {
-    var label = document.createElement('label');
+function createWords(j){
 
-    label.innerText = '\n' + j + '\n';
-
-    document.body.appendChild(label);
-}
 function forsum() {
     const words = ['HELLO', 'WELCOME', 'NEW', 'WORLD', 'HOW ARE YOU?'];
 
@@ -12,12 +7,13 @@ function forsum() {
         createWords(latters);
     }
 }
+}
 
 //---------------------------------------------------------------------------------------
-function createNum(adi) {
+function createNum(adi,dm) {
     var label = document.createElement('label');
 
-    label.innerText = adi + '\n';
+    label.innerText = adi + '=' + dm + '\n';
 
     //label.id = 'lbl' + key;
 
@@ -26,9 +22,9 @@ function createNum(adi) {
 
 function average() {
     let latters = [1, 2, 3, 4, 5]
-    for (let key = 0; key <= 5; key++) {
+    for (let key = 0; key <= 5; key++) { 
 
-        createNum(key);
+        createNum(key); 
     }
 
 }
@@ -48,6 +44,7 @@ function today(str) {
 
 //------------------------------------------------------------------------------
 
+//push
  function array1(){
     const name = ['abc','def','ghi','jkl','mno','pqr'];
 
@@ -62,7 +59,9 @@ function today(str) {
  }
 
  //------------------------------------------------------------------------------
- let dress =["sfari","saree","kurti","shirt","T shirt","top","salwar"];
+
+ //pop
+ let dress =["Sfari","Saree","Kurti","Shirt","T Shirt","top","Salwar","Anarkali"];
  function popArray(){
     
     dress.pop();
@@ -72,3 +71,80 @@ function today(str) {
         createNum(abc) ;
     }
  }
+
+ //----------------------------------------------------------------------------
+
+ //sort
+ function sortArray(){
+    dress.sort();
+
+    for(you of dress){
+        createWords(you);
+    }
+ }
+
+ //--------------------------------------------------------------------------
+
+ //reverse
+ function reverseArray(){
+    dress.reverse();
+
+    for(tum in dress){
+        createNum(tum ,dress[tum]);
+      //  createNum(dress[tum]);
+    }
+ }
+
+//----------------------------------------------------------------------
+
+//decending
+function decendingArray(){
+    dress.sort().reverse();
+
+    for(abc of dress){
+        createWords  (abc);
+    }
+
+}
+
+//-------------------------------------------------------------------
+
+//merge
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------
+
+//splice
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------
+
+//update
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------------------
