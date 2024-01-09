@@ -1,13 +1,13 @@
-function lblcreate(jp){
+function lblcreate(jp) {
     var label = document.createElement('label');
 
-    label.innerText = jp + '\n';
+    label.innerText = '\n' + jp + '\n';
 
     document.body.appendChild(label);
 }
 let yourArray = [];
 
-function createtask(){
+function createtask() {
     let avni = document.getElementById("capital").value;
 
     yourArray.push(avni);
@@ -16,13 +16,64 @@ function createtask(){
     // for(let words of yourArray){
     //     lblcreate(words);
     // }      
-            
-}
-function popArray(){
-    let avni = document.getElementById("capital").value;
 
-    for(let x of yourArray ){
+}
+
+function popArray() {
+    //let avni = document.getElementById("capital").value;
+
+    yourArray.pop();
+    for (let x of yourArray) {
         lblcreate(x);
     }
-    yourArray .pop(avni);
+
+}
+
+ 
+
+//--------------------------------------------------------------
+
+//array in while
+
+let capital = ['Animal', 'Avenger', 'Area', 'Always'];
+
+
+function whileArray() {
+    try{
+    let jp = 0;
+    capital.push('non');
+    while (jp < capital.length) {
+        lblcreate(capital[jp]);
+        jp++;
+    }
+      }
+      catch(hg){
+        lblcreate(hg);
+      }
+
+}
+
+//----------------------------------------------------------------
+
+let price = [];
+
+function callSubmit(){
+    let custom = document.getElementById("small").value;
+    
+    let j = 0;
+    price.push(custom);
+    while(j < price.length){
+        lblcreate(price[j]);
+        j++;
+    }
+}
+
+function callRemove(){
+    let j = 0;
+
+    price.pop();
+    while(j < price.length){
+        lblcreate(price[j]);
+        j++;
+    }
 }
