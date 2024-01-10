@@ -1,13 +1,21 @@
 function createWords(j){
+    var label = document.createElement('label');
 
-function forsum() {
+    label.innerText = j + '\n';
+
+    //label.id = 'lbl' + key;
+
+    document.body.appendChild(label);
+}
+
+function forsum(){
     const words = ['HELLO', 'WELCOME', 'NEW', 'WORLD', 'HOW ARE YOU?'];
 
     for (latters of words) {
         createWords(latters);
     }
 }
-} 
+
 
 //---------------------------------------------------------------------------------------
 function createNum(adi,dm) {
@@ -31,16 +39,16 @@ function average() {
 
 //----------------------------------------------------------------------------------
 
-function today(str) {
-    let count = ['a','e','i','o','u'];
-    for (let char in str)
-    {
-        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+// function today(str) {
+//     let count = ['a','e','i','o','u'];
+//     for (let char in str)
+//     {
+//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
             
-        }
-    }
-    createwords( count ) ;
-}
+//         }
+//     }
+//     createwords( count ) ;
+// }
 
 //------------------------------------------------------------------------------
 
@@ -97,7 +105,8 @@ function today(str) {
 
 //----------------------------------------------------------------------
 
-//decending
+//decending : It arrange the array in descending order.
+//            first we use SORT and then apply REVERSE after sorting. 
 function decendingArray(){
     dress.sort().reverse();
 
@@ -110,27 +119,27 @@ function decendingArray(){
 //-------------------------------------------------------------------
 
 //merge
+let wear = ['new', 'old'];
 
-
-
-
-
-
-
-
-
+function margeArray(){
+    let mArray = dress.concat(wear);
+    for( k of mArray){
+        createWords(k);
+    }
+}
 
 //-----------------------------------------------------------------
 
 //splice
 
+function spliceArray(){
 
+    dress.splice(3,2);
 
-
-
-
-
-
+    for(M of dress){
+        createWords(M);
+    }
+}
 
 
 

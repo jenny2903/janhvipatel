@@ -43,9 +43,10 @@ function whileArray() {
     let jp = 0;
     capital.push('non');
     while (jp < capital.length) {
-        lblcreate(capital[jp]);
+        lblcreate7(capital[jp]);
         jp++;
     }
+    throw('not find');
       }
       catch(hg){
         lblcreate(hg);
@@ -76,4 +77,10 @@ function callRemove(){
         lblcreate(price[j]);
         j++;
     }
+}
+
+function callDesending(){
+    let j = 0;
+
+    
 }
