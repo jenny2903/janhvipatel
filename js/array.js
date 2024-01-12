@@ -1,7 +1,7 @@
 function createWords(j){
     var label = document.createElement('label');
 
-    label.innerText = j + '\n';
+    label.innerText = j;
 
     //label.id = 'lbl' + key;
 
@@ -140,50 +140,41 @@ function spliceArray(){
         createWords(M);
     }
 }
-
-
-
 //------------------------------------------------------------------
 
 //update
 
+function updateArray(){
+    dress[7] = 'sold out';
 
-
-
-
-
-
-
-
+    for(s of dress){
+        createWords(s);
+    }
+}
 
 //--------------------------------------------------------------
 
 //slice
 
+function sliceArray(){
+    dress.slice(3,4);
 
-
-
-
-
-
-
-
-
-
+    for(S of dress){
+        createWords(S);
+    }
+}
 
 //----------------------------------------------------------------
 
 //join
 
+function joinArray(){
+    
+    let text = dress.join(' and ');
 
-
-
-
-
-
-
-
-
-
+    for(joi of text){
+        createWords(joi);
+        }
+}
 
 //----------------------------------------------------------------              

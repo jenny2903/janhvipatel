@@ -81,6 +81,11 @@ function callRemove(){
 
 function callDesending(){
     let j = 0;
-
+    price.sort().reverse();
+ 
+    while(j < price.length){
+        lblcreate(price[j]);
+        j++;
+    }
     
 }
