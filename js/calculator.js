@@ -23,7 +23,7 @@ function calculator(options) {
 }
 
 //-------------------------------------------------------
-/*
+
 function lablecreate(jp) {
     let main = document.createElement('lable');
 
@@ -54,4 +54,4 @@ function calculator2(choice) {
         alert("invalid input")
     }
 
-}*/
+}
